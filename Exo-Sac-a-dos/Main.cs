@@ -14,7 +14,7 @@ namespace Exo_Sac_a_dos
             Misc Sapphire = new Misc("Sapphire", "gemme", 150);
             Misc Diamond = new Misc("Diamant", "Matériau", 500);
             Misc Iron = new Misc("Minerai de fer", "Matériau", 50);
-            Misc Wood = new Misc("Baton", "Matériau", 50);
+            Misc Wood = new Misc("Baton", "Matériau", 10);
             Stuff Sword = new Stuff("Epée", "arme", 150, new List<Misc>
             {
                 Iron,
@@ -44,7 +44,18 @@ namespace Exo_Sac_a_dos
 
             Sac.WhatInMyBag();
 
+            Console.WriteLine();
+            Console.WriteLine("Détruisons l'épée simple");
 
+            Sac.Scrapping(Sword);
+            Sac.WhatInMyBag();
+            
+            Console.WriteLine();
+            Console.WriteLine("Détruisons l'épée épique et rachetons une épé simple");
+
+            Sac.AddItem(Sword);
+            Sac.Scrapping(EpicSword);
+            Sac.WhatInMyBag();
 
         }
     }

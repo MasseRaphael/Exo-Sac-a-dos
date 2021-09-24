@@ -25,5 +25,11 @@ namespace Exo_Sac_a_dos
                 Console.WriteLine($"{b.First()} x {count} (valeur: {b.First().Value*count} Gold)");
             }
         }
+
+        public void Scrapping(Stuff byebye)
+        {
+            Sac.AddRange(byebye.Recycle());
+            Sac.Remove(byebye);
+        }
     }
 }
