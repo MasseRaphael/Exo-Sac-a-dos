@@ -51,7 +51,7 @@ namespace Exo_Sac_a_dos
             Sac.WhatInMyBag();
             
             Console.WriteLine();
-            Console.WriteLine("Détruisons l'épée épique et rachetons une épé simple");
+            Console.WriteLine("Détruisons l'épée épique et rachetons une épée simple");
 
             Sac.AddItem(Sword);
             Sac.Scrapping(EpicSword);
